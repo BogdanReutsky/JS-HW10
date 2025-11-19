@@ -53,7 +53,7 @@
 console.log("Завдання 3");
 
 
-const words = ["hello", "test", "random", "word", "???"]
+const words = ["hello", "test", "random", "word", "???","random word","345"]
 function repeatMessage(times, messageCreator){
     for(let i = 0; i < times; i += 1){
         console.log(messageCreator(i));
@@ -63,5 +63,4 @@ function randomSelector() {
     const randomWord = Math.floor(Math.random() * words.length);
     return words[randomWord];
 }
-
 repeatMessage(5, randomSelector);
