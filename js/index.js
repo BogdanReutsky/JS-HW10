@@ -59,12 +59,9 @@ function repeatMessage(times, messageCreator){
         console.log(messageCreator(i));
     }
 }
-repeatMessage(5, randomSelector);
-
 function randomSelector() {
     const randomWord = Math.floor(Math.random() * words.length);
     return words[randomWord];
-    
 }
 
-
+repeatMessage(5, randomSelector);
